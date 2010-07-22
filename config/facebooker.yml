@@ -9,38 +9,9 @@
 # This should only be necessary until the final version of the new profile is released.
 
 development:
-  api_key: f991b59c56b07134b8cac780abb183d0
-  secret_key: f7b15a925058e7be60f0a4d56294e938
-  canvas_page_name:
-  callback_url:
-  pretty_errors: true
-  set_asset_host_to_callback_url: false
-  tunnel:
-    public_host_username:
-    public_host: 
-    public_port: 4007
-    local_port: 3000
+  app_id: 131336175362
+  secret: f7b15a925058e7be60f0a4d56294e938
 
 test:
-  api_key: 
-  secret_key: 
-  canvas_page_name: 
-  callback_url:
-  set_asset_host_to_callback_url: true
-  tunnel:
-    public_host_username: 
-    public_host: 
-    public_port: 4007
-    local_port: 3000
-
-production:
-  api_key: 
-  secret_key: 
-  canvas_page_name: 
-  callback_url: 
-  set_asset_host_to_callback_url: true   
-  tunnel:
-    public_host_username: 
-    public_host: 
-    public_port: 4007
-    local_port: 3000
+  app_id: 131336175362
+  secret: f7b15a925058e7be60f0a4d56294e938

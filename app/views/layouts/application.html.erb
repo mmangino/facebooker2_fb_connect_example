@@ -2,21 +2,21 @@
   <head>
     <%= javascript_include_tag :defaults%>
     <%= stylesheet_link_tag 'application'%>
-    <%= fb_connect_javascript_tag %>
-    <% init_fb_connect "XFBML" do %>
-      <%= fb_connect_stream_publish(@user_action_to_publish) if @user_action_to_publish%>    
-      <%= yield :fb_connect%>
-    <% end %>
     
   </head>
   <body>
     <div id="header">
       <div id="navigation">
         <% if current_user%>
-          <% if facebook_session %>
-            <%= fb_profile_pic facebook_session.user,:facebook_logo=>true,:height=>"24",:width=>"24"%> <%= fb_name current_user,:use_you=>false%> <%= link_to "your account",current_user%> <%= fb_logout_link "logout", logout_path%> 
+          <% if current_user.facebook_id %>
+            <%= fb_profile_pic current_user,:facebook_logo=>true,:height=>"24",:width=>"24"%> 
+            <%= fb_name current_user,:use_you=>false%> 
+          <% end %>
+          <%= link_to "your account",current_user%> 
+          <% if current_facebook_user%>
+            <%= fb_logout_link "logout", logout_path%> 
           <% else %>
-            Welcome, <%=current_user.name%> <%= link_to "your account",current_user%>  <%= link_to "logout", logout_path%>
+            <%= link_to "logout", logout_path%>
           <% end %>
           <%= link_to "notes",notes_path%>
         <% else %>
@@ -47,5 +47,10 @@
         <%= yield%>
       </div>
     </div>
+    <% fb_connect_async_js  do %>
+      <%#= fb_connect_stream_publish(@user_action_to_publish) if @user_action_to_publish%>    
+      <%= yield :fb_connect%>
+    <% end %>
+    
   </body>
 </html>
