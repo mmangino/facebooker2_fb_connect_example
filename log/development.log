@@ -1,0 +1,611 @@
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-02-27 16:15:46) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 92ms (View: 47, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-02-27 16:15:54) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://web1.tunnlr.com/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-02-27 16:16:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://web1.tunnlr.com/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-02-27 16:16:38) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 73ms (View: 7, DB: 0) | 200 OK [http://web1.tunnlr.com/create_session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-02-27 16:16:47) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 120ms (View: 113, DB: 0) | 200 OK [http://web1.tunnlr.com/create_session]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-02-27 16:20:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://web1.tunnlr.com/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-02-27 16:21:00) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."facebook_id" = 563710619) LIMIT 1[0m
+Redirected to /notes
+Completed in 10ms (DB: 0) | 302 Found [http://web1.tunnlr.com/create_session]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2009-02-27 16:21:01) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Load (0.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".to_user_id = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (4.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.2ms)
+  [4;36;1mNote Load (0.2ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".from_user_id = 2) [0m
+Completed in 97ms (View: 89, DB: 0) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 10:02:00) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-03-27 10:02:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 27ms (View: 24, DB: 0) | 200 OK [http://web1.tunnlr.com/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-03-27 10:02:24) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."facebook_id" = 12451752) LIMIT 1[0m
+Redirected to /notes
+Completed in 74ms (DB: 1) | 302 Found [http://web1.tunnlr.com/create_session]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2009-03-27 10:02:25) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (4.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.3ms)
+Completed in 68ms (View: 59, DB: 0) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 10:02:28) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 10:03:09) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 10:05:43) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 16:46:32) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 65ms (View: 48, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 16:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 16:58:23) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 55ms (View: 34, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 17:01:34) [GET]
+  [4;36;1mFacebooker::Rails::Publisher::FacebookTemplate Load (0.3ms)[0m   [0;1mSELECT * FROM "facebook_templates" WHERE ("facebook_templates"."template_name" = 'UserPublisher::connected') LIMIT 1[0m
+facebook.feed.publishUserAction (0.493829011917114) template_data = {}, template_bundle_id = 131700770362
+  [4;35;1mNote Load (0.5ms)[0m   [0mSELECT * FROM "notes" ORDER BY notes.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 129668ms (View: 23, DB: 1) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 17:03:44) [GET]
+  Parameters: {"1219166670"=>""}
+
+
+ActionController::RoutingError (No route matches "/images/growing/profile/scroll_bar.gif" with {:method=>:get, :canvas=>false}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/mmangino/code/facebook/fb_connect_example/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2009-03-27 17:03:57) [GET]
+  [4;36;1mNote Load (0.7ms)[0m   [0;1mSELECT * FROM "notes" ORDER BY notes.id DESC LIMIT 1[0m
+  [4;35;1mFacebooker::Rails::Publisher::FacebookTemplate Load (0.3ms)[0m   [0mSELECT * FROM "facebook_templates" WHERE ("facebook_templates"."template_name" = 'UserPublisher::note_sent') LIMIT 1[0m
+facebook.feed.publishUserAction (0.501443147659302) template_data = {"story_size": 2, "short_note_body": "<p>This is a test</p>", "note_body": "<p>This is a test</p>"}, template_bundle_id = 131700765362
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "facebook_templates" WHERE ("facebook_templates"."template_name" = 'UserPublisher::note_sent') LIMIT 1[0m
+facebook.feed.publishUserAction (0.572051048278809) template_data = {"story_size": 2, "short_note_body": "<p>This is a test</p>", "note_body": "<p>This is a test</p>"}, template_bundle_id = 131700765362
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 09:13:50) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 56ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 09:13:52) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-08 09:14:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."facebook_id" = 12451752) LIMIT 1[0m
+Completed in 35ms (View: 18, DB: 1) | 200 OK [http://web1.tunnlr.com/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-08 09:14:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://web1.tunnlr.com/users/new]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 09:14:21) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 09:14:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-08 09:15:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 103ms (View: 93, DB: 0) | 200 OK [http://web1.tunnlr.com/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-08 09:15:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://web1.tunnlr.com/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-08 09:15:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://web1.tunnlr.com/users/1]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-01-08 09:15:32) [PUT]
+  Parameters: {"commit"=>"Update Settings", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "id"=>"1", "user"=>{"name"=>"Mike Mangino", "email"=>"mmangino@elevatedrails.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'mmangino@elevatedrails.com' AND "users".id <> 1) LIMIT 1[0m
+Redirected to http://web1.tunnlr.com:10103/notes
+Completed in 14ms (DB: 1) | 302 Found [http://web1.tunnlr.com/users/1]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-01-08 09:15:32) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;36;1mNote Load (0.8ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (4.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+Completed in 117ms (View: 106, DB: 2) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 09:16:31) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://web1.tunnlr.com/]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-01-08 09:16:37) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Load (0.2ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;36;1mNote Load (0.7ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (3.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+Completed in 29ms (View: 18, DB: 2) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2010-01-08 09:16:39) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/new
+Completed in 44ms (View: 30, DB: 0) | 200 OK [http://web1.tunnlr.com/notes/new]
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-01-08 09:16:44) [POST]
+  Parameters: {"commit"=>"Send Note", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "note"=>{"body"=>"fdsjklfds", "recipient_email_address"=>"alberto@elevatedrails.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'alberto@elevatedrails.com') LIMIT 1[0m
+  [4;36;1mNote Create (0.5ms)[0m   [0;1mINSERT INTO "notes" ("created_at", "body", "updated_at", "to_user_id", "from_user_id") VALUES('2010-01-08 14:16:45', 'fdsjklfds', '2010-01-08 14:16:45', 2, 1)[0m
+  [4;35;1mFacebooker::Rails::Publisher::FacebookTemplate Load (0.2ms)[0m   [0mSELECT * FROM "facebook_templates" WHERE ("facebook_templates"."template_name" = 'f991b59c56b07134b8cac780abb183d0: UserPublisher::note_sent') LIMIT 1[0m
+facebook.feed.registerTemplateBundle (0.506575107574463) short_story_templates = [{"template_title":"{*actor*} sent a note using notes!","template_body":"{*short_note_body*}"}], full_story_template = {"template_title":"{*actor*} sent a note using notes!","template_body":"{*note_body*}"}, one_line_story_templates = ["{*actor*} sent a note using notes!"]
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "facebook_templates" WHERE ("facebook_templates"."template_name" = 'f991b59c56b07134b8cac780abb183d0: UserPublisher::note_sent') LIMIT 1[0m
+  [4;35;1mFacebooker::Rails::Publisher::FacebookTemplate Create (0.4ms)[0m   [0mINSERT INTO "facebook_templates" ("bundle_id", "template_name", "content_hash") VALUES(415603510362, 'f991b59c56b07134b8cac780abb183d0: UserPublisher::note_sent', 'cff9d264845b73bacfaab386756cd8ff')[0m
+Redirected to http://web1.tunnlr.com:10103/notes
+Completed in 570ms (DB: 2) | 302 Found [http://web1.tunnlr.com/notes]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-01-08 09:16:45) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Load (0.2ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;36;1mNote Load (0.9ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (3.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+
+ActionView::TemplateError (undefined method `user_message' for #<Facebooker::Rails::Publisher::UserAction:0x1015d6dd8>) on line #7 of app/views/layouts/application.html.erb:
+4:     <%= stylesheet_link_tag 'application'%>
+5:     <%= fb_connect_javascript_tag %>
+6:     <% init_fb_connect "XFBML" do %>
+7:       <%= fb_connect_stream_publish(@user_action_to_publish) if @user_action_to_publish%>    
+8:       <%= yield :fb_connect%>
+9:     <% end %>
+10:     
+
+    facebooker (1.0.58) lib/facebooker/rails/helpers/fb_connect.rb:130:in `fb_connect_stream_publish'
+    facebooker (1.0.58) lib/facebooker/rails/helpers/fb_connect.rb:128:in `fb_connect_stream_publish'
+    app/views/layouts/application.html.erb:7
+    facebooker (1.0.58) lib/facebooker/rails/helpers/fb_connect.rb:26:in `init_fb_connect'
+    app/views/layouts/application.html.erb:6
+
+Rendered rescues/_trace (57.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (200)
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-01-08 09:21:17) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Load (0.2ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;35;1mNote Load (0.9ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (3.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+Completed in 31ms (View: 20, DB: 2) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2010-01-08 09:21:36) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/new
+Completed in 25ms (View: 10, DB: 0) | 200 OK [http://web1.tunnlr.com/notes/new]
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-01-08 09:21:41) [POST]
+  Parameters: {"commit"=>"Send Note", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "note"=>{"body"=>"fdshjkfds", "recipient_email_address"=>"alberto@elevatedrails.com"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'alberto@elevatedrails.com') LIMIT 1[0m
+  [4;35;1mNote Create (0.4ms)[0m   [0mINSERT INTO "notes" ("created_at", "body", "updated_at", "to_user_id", "from_user_id") VALUES('2010-01-08 14:21:42', 'fdshjkfds', '2010-01-08 14:21:42', 2, 1)[0m
+
+NameError (uninitialized constant UserPublisher::Faceboooker):
+  app/models/user_publisher.rb:12:in `note_sent'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `send'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `method_missing'
+  app/controllers/notes_controller.rb:15:in `create'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (200)
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-01-08 09:22:01) [POST]
+  Parameters: {"commit"=>"Send Note", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "note"=>{"body"=>"fdshjkfds", "recipient_email_address"=>"alberto@elevatedrails.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'alberto@elevatedrails.com') LIMIT 1[0m
+  [4;36;1mNote Create (0.4ms)[0m   [0;1mINSERT INTO "notes" ("created_at", "body", "updated_at", "to_user_id", "from_user_id") VALUES('2010-01-08 14:22:01', 'fdshjkfds', '2010-01-08 14:22:01', 2, 1)[0m
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio Statedegreeyear2000concentrationsComputer and Information Scienceschool_typeCollege
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio StatedegreeMBAyear2004concentrationsFinanceschool_typeGrad School
+facebook.users.getInfo (1.94453978538513) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 12451752
+
+TypeError (can't convert nil into String):
+  facebooker (1.0.58) lib/facebooker/adapters/adapter_base.rb:8:in `facebook_path_prefix'
+  facebooker (1.0.58) lib/facebooker.rb:148:in `facebook_path_prefix'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:115:in `default_url_options'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:119:in `default_url_options'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:590:in `default_url_options'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:491:in `url_for'
+  (eval):16:in `note_url'
+  app/models/user_publisher.rb:14:in `note_sent'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `send'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `method_missing'
+  app/controllers/notes_controller.rb:15:in `create'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (200)
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-01-08 09:22:41) [POST]
+  Parameters: {"commit"=>"Send Note", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "note"=>{"body"=>"fdshjkfds", "recipient_email_address"=>"alberto@elevatedrails.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'alberto@elevatedrails.com') LIMIT 1[0m
+  [4;35;1mNote Create (0.3ms)[0m   [0mINSERT INTO "notes" ("created_at", "body", "updated_at", "to_user_id", "from_user_id") VALUES('2010-01-08 14:22:41', 'fdshjkfds', '2010-01-08 14:22:41', 2, 1)[0m
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio Statedegreeyear2000concentrationsComputer and Information Scienceschool_typeCollege
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio StatedegreeMBAyear2004concentrationsFinanceschool_typeGrad School
+facebook.users.getInfo (0.667285919189453) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 12451752
+
+NameError (uninitialized constant UserPublisher::HOST):
+  app/models/user_publisher.rb:21:in `default_url_options'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:590:in `default_url_options'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:491:in `url_for'
+  (eval):16:in `note_url'
+  app/models/user_publisher.rb:14:in `note_sent'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `send'
+  facebooker (1.0.58) lib/facebooker/rails/publisher.rb:538:in `method_missing'
+  app/controllers/notes_controller.rb:15:in `create'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (200)
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-01-08 09:22:55) [POST]
+  Parameters: {"commit"=>"Send Note", "authenticity_token"=>"yDaWmPek3ZfAdCujC/q0q3IdfNkTHCXGP6PTzNDibcU=", "note"=>{"body"=>"fdshjkfds", "recipient_email_address"=>"alberto@elevatedrails.com"}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'alberto@elevatedrails.com') LIMIT 1[0m
+  [4;36;1mNote Create (0.4ms)[0m   [0;1mINSERT INTO "notes" ("created_at", "body", "updated_at", "to_user_id", "from_user_id") VALUES('2010-01-08 14:22:55', 'fdshjkfds', '2010-01-08 14:22:55', 2, 1)[0m
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio Statedegreeyear2000concentrationsComputer and Information Scienceschool_typeCollege
+**Warning**, Attempt to set non-attribute: school_type (0) nameOhio StatedegreeMBAyear2004concentrationsFinanceschool_typeGrad School
+facebook.users.getInfo (1.31562304496765) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 12451752
+Redirected to http://web1.tunnlr.com:10103/notes
+Completed in 1365ms (DB: 1) | 302 Found [http://web1.tunnlr.com/notes]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-01-08 09:22:57) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".to_user_id = 1) [0m
+  [4;35;1mNote Load (1.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".from_user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (4.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered notes/_show (1.1ms)
+Completed in 128ms (View: 116, DB: 3) | 200 OK [http://web1.tunnlr.com/notes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 09:28:31) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 09:58:33) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 10:25:26) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 235ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 10:28:35) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 10:58:37) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 11:28:40) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 11:58:42) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-01-08 12:00:11) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 12:28:43) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-08 12:58:45) [GET]
+
+ActionController::RoutingError (No route matches "/neighbors.xml" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering rescues/layout (200)

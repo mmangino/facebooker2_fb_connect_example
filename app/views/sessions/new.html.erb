@@ -1,0 +1,24 @@
+<div class="option_container">
+  <table cellpadding="10px" cellspacing="5px">
+    <tr>
+      <td width="50%">
+        <h1>Login with email</h1>
+        <% form_tag sessions_path do %>
+          <p>Login to share notes with your friends</p>
+          <label>Email</label>
+          <%= text_field_tag :email, params[:email]%>
+          <br />
+          <br />
+          <%= submit_tag "Log Me In"%>
+        <% end %>
+      </td>
+      <td width="50%">
+        <h1>Login via Facebook</h1>
+        <p>If you've already connected your account via Facebook, you can login using your facebook 
+            username and password.</p>
+        <%= fb_login_and_redirect create_session_path%>
+      </td>
+    </tr>
+  </table>
+</div>
+

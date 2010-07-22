@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="/javascripts/prototype.js?1235669226" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1235669226" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1235669226" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1235669226" type="text/javascript"></script>
+<script src="/javascripts/application.js?1235669226" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1235751949" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+              Element.observe(window,'load', function() {
+                FB_RequireFeatures(["XFBML", "Api"], function() {
+                  FB.Facebook.init('f991b59c56b07134b8cac780abb183d0','/xd_receiver.html');
+                  
+      
+      
+FB.Facebook.get_sessionState().waitUntilReady(function()
+     {
+         FB.Connect.showPermissionDialog('offline_access');
+     });
+  
+    
+                });
+              });
+
+//]]>
+</script>
+    
+  </head>
+  <body>
+    <div id="header">
+      <div id="navigation">
+        
+          
+            <fb:profile-pic facebook_logo="true" height="24" uid="12451752" width="24"></fb:profile-pic> <fb:name uid="12451752" useyou="false"></fb:name> <a href="/users/1">your account</a> <a href="#" onclick="try {
+FB.Connect.logoutAndRedirect(&quot;/logout&quot;);
+} catch (e) { alert('RJS error:\n\n' + e.toString()); alert('FB.Connect.logoutAndRedirect(\&quot;/logout\&quot;);'); throw e }; return false;">logout</a> 
+          
+        
+      </div>
+    </div>
+    <div id="main_content">
+      
+      
+      <div id="main_body">
+        
+<h1>Welcome to notes!</h1>
+<p>
+  In this application, you can send notes to your friends. You can log in using facebook connect and publish items to your news feed.
+</p>
+<p>
+  To get started, <a href="/users/new">signup for an account</a>
+</p>
+<fb:prompt-permission perms="offline_access">Give me access</fb:prompt-permission>
+      </div>
+    </div>
+  </body>
+</html>

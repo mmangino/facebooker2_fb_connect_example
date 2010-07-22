@@ -1,0 +1,9 @@
+
+<% form_for @user do |f| %>
+  <h2>Name</h2>
+  <%= f.text_field :name %>  
+  <h2>Email</h2>
+  <%= f.text_field :email %>
+  <br />
+  <%= submit_tag "Create Account"%>
+<% end %>
