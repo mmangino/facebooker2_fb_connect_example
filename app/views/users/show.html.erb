@@ -3,8 +3,7 @@
 
   <p>Your account isn't currently connected to a Facebook account.</p>
   <p>To connect your account to facebook, login to facebook using the button below. This will allow you to login via your facebook account and add items to your news feed.</p>
-  <% js = update_page {|page| page.redirect_to create_connection_path}%>
-  <%= fb_login_button js%>
+  <%= fb_login_and_redirect create_connection_path, :perms=>"email,publish_stream", :text => "Connect Account"%>
 <% end %>
 
 <h2>Change your settings</h2>
