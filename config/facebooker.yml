@@ -12,6 +12,10 @@ development:
   app_id: 131336175362
   secret: f7b15a925058e7be60f0a4d56294e938
 
+production:
+  app_id: 131336175362
+  secret: f7b15a925058e7be60f0a4d56294e938
+
 test:
   app_id: 131336175362
   secret: f7b15a925058e7be60f0a4d56294e938
